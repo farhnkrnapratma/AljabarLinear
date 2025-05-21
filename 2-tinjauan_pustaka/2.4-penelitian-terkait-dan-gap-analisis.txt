@@ -1,0 +1,50 @@
+Penelitian Terkait  
+
+1. Haitsma & Kalker (2002)  
+- Fokus: Pengembangan sistem sidik jari audio yang sangat kuat dengan ekstraksi fitur berbasis spektral dan strategi pencarian efisien.  
+- Metode: Menggunakan Fast Fourier Transform (FFT) untuk analisis frekuensi, tabel pencarian (lookup table) yang diindeks dengan hash table, serta algoritma pencarian dua fase untuk menangani basis data besar.  
+- Kekuatan: Ketahanan terhadap distorsi seperti kebisingan, kompresi audio, dan variasi volume.  
+- Aplikasi: Digunakan untuk pemantauan siaran dan identifikasi konten audio dalam skenario real-time.  
+
+2. Cano & Batlle (2005)  
+- Fokus: Ulasan menyeluruh tentang model sidik jari audio, termasuk ekstraksi fitur, ukuran kemiripan, dan strategi pencarian.  
+- Metode: Mengeksplorasi redundansi global dalam korpus musik dengan pendekatan berbasis fonem (mirip dengan pengenalan ucapan) dan menggunakan metrik Exponential Pseudo Norm (EPN) untuk meningkatkan diskriminasi kemiripan.  
+- Kekuatan: Menekankan skalabilitas basis data dan ketahanan terhadap degradasi sinyal.  
+
+3. Allamanche et al. (2001)  
+- Fokus: Identifikasi konten audio berbasis konten menggunakan deskripsi tingkat rendah MPEG-7.  
+- Metode: Menggabungkan fitur frekuensi dan temporal untuk membangun sidik jari yang dapat digunakan dalam aplikasi seperti audio ID.  
+
+4. Sukittanon & Atlas (2002)  
+- Fokus: Ekstraksi fitur frekuensi modulasi untuk karakterisasi pola dinamis audio.  
+- Metode: Menggunakan estimasi frekuensi modulasi dari energi filter bank untuk meningkatkan diskriminasi antara konten audio yang berbeda.  
+
+5. Fragoulis et al. (2001)  
+- Fokus: Pengenalan rekaman musik yang sangat terdistorsi.  
+- Metode: Pendekatan berbasis statistik untuk meningkatkan robustness terhadap degradasi seperti kehilangan frekuensi atau perubahan tempo.  
+
+Gap Analisis  
+
+1. Optimalisasi Skalabilitas Basis Data  
+- Masalah: Penggunaan tabel pencarian (lookup table) dengan 2³² entri tidak praktis untuk sistem dengan memori terbatas. Meskipun hash table digunakan sebagai solusi, distribusi entri yang tidak merata (banyak entri kosong) tetap menjadi tantangan.  
+- Gap: Perlu pengembangan struktur data yang lebih efisien untuk indeksasi sidik jari, seperti teknik inverted file indexing yang dikombinasikan dengan kompresi entri.  
+
+2. Robustness terhadap Degradasi Kompleks  
+- Masalah: Sebagian besar sistem hanya diuji pada degradasi sederhana (kebisingan, kompresi). Degradasi kompleks seperti perubahan genre musik, overlay suara latar, atau manipulasi perseptual (misalnya, pitch shifting ekstrem) belum cukup ditangani.  
+- Gap: Perlu model ekstraksi fitur yang lebih fokus pada karakteristik perseptual (misalnya, harmonisitas, kenyaringan) untuk meningkatkan ketahanan terhadap distorsi yang tidak terduga.  
+
+3. Efisiensi Komputasi untuk Perangkat Portabel  
+- Masalah: Transformasi Fourier dan operasi pencarian basis data masih membutuhkan sumber daya komputasi tinggi, terutama untuk perangkat dengan kapasitas terbatas (seperti IoT atau wearable devices).  
+- Gap: Pengembangan algoritma sidik jari berbasis lightweight neural networks atau pendekatan berbasis approximate computing untuk mengurangi beban proses.  
+
+4. Peningkatan Ukuran Kemiripan  
+- Masalah: Mayoritas sistem menggunakan metrik sederhana seperti jarak Hamming atau korelasi linier, yang kurang sensitif terhadap perbedaan halus antara konten audio.  
+- Gap: Eksplorasi metrik kemiripan berbasis deep learning (misalnya, Siamese Networks) untuk membedakan konten yang sangat mirip (misalnya, versi live vs studio dari lagu yang sama).  
+
+5. Integrasi dengan Teknologi Kontekstual  
+- Masalah: Sistem saat ini hanya mengidentifikasi konten audio tanpa mempertimbangkan konteks penggunaan (misalnya, lokasi geografis, preferensi pengguna, atau situasi sosial).  
+- Gap: Integrasi sidik jari audio dengan sistem rekomendasi atau analisis konteks berbasis AI untuk aplikasi personalisasi.  
+
+6. Verifikasi Integritas vs Identifikasi  
+- Masalah: Fungsi verifikasi integritas (deteksi manipulasi audio) kurang dikembangkan dibandingkan identifikasi konten.  
+- Gap: Penelitian lebih lanjut tentang sidik jari yang dapat mendeteksi manipulasi spesifik (misalnya, penghapusan atau penyisipan segmen audio).  
