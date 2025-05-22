@@ -1,14 +1,14 @@
 # Aljabar Linear
 ## Struktur Jurnal
 
-- [x] Judul  
-- [x] Abstrak  
+- [X] Judul  
+- [X] Abstrak  
 - [X] Pendahuluan 
-- [ ] 2. Tinjauan Pustaka  
-    - [x] 2.1 Definisi Fingerprinting Audio  
-    - [x] 2.2 Penggunaan Matriks dan Vektor dalam Fingerprinting Audio  
-    - [ ] 2.3 Cara Kerja Aplikasi Shazam  
-    - [ ] 2.4 Penelitian Terkait dan Gap Analisis  
+- [X] 2. Tinjauan Pustaka  
+    - [X] 2.1 Definisi Fingerprinting Audio  
+    - [X] 2.2 Penggunaan Matriks dan Vektor dalam Fingerprinting Audio  
+    - [X] 2.3 Cara Kerja Aplikasi Shazam  
+    - [X] 2.4 Penelitian Terkait dan Gap Analisis  
 - [ ] 3. Metodologi  
     - [ ] 3.1 Desain Penelitian  
     - [ ] 3.2 Teknik Pengumpulan Data  
