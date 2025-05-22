@@ -2,6 +2,10 @@
 
 Dalam era digital yang semakin berkembang, kebutuhan akan sistem identifikasi audio yang cepat, akurat, dan dapat bekerja dalam berbagai kondisi sinyal menjadi sangat penting. Aplikasi seperti Shazam menunjukkan bagaimana teknologi fingerprinting audio dapat digunakan untuk mengenali lagu hanya dari potongan audio berdurasi beberapa detik. Teknologi ini memungkinkan pengambilan informasi berbasis konten tanpa bergantung pada metadata, menjadikannya sangat relevan dalam konteks big data dan distribusi musik digital.
 
+Haitsma dan Kalker (2002) mengembangkan sistem Fingerprinting audio yang kuat dan efisien. Sistem ini mampu mencocokkan jutaan lagu dengan cepat, bahkan di perangkat dengan kemampuan komputasi terbatas. Teknologi ini telah diterapkan dalam berbagai bidang seperti pemantauan siaran, pelacakan konten berhak cipta, dan pengelolaan koleksi musik.
+
+Sementara itu, Cano dan Batlle (2005) meninjau berbagai pendekatan dalam teknologi Fingerprinting audio dan membandingkannya dengan watermarking. Mereka menekankan pentingnya akurasi, kecepatan, dan ketahanan sistem terhadap berbagai bentuk gangguan. Mereka juga menunjukkan bahwa Fingerprinting audio bisa digunakan tidak hanya untuk identifikasi, tapi juga untuk verifikasi keaslian rekaman dan pencarian musik berdasarkan konten.
+
 Fingerprinting audio bekerja dengan mengekstraksi ciri khas dari sebuah sinyal audio dan merepresentasikannya dalam bentuk data yang ringkas namun tetap unik dan robust terhadap gangguan seperti noise, kompresi, maupun distorsi. Proses ini sangat terkait erat dengan teknik-teknik pemrosesan sinyal digital, khususnya transformasi spektral dan representasi matematis berbasis matriks dan vektor, yang memungkinkan komputasi cepat dan efisien dalam skala besar.
 
 Rumusan masalah dalam penelitian ini adalah:
