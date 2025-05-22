@@ -1,0 +1,14 @@
+Sistem fingerprinting audio modern tidak lepas dari pemanfaatan struktur matriks dan vektor dalam proses ekstraksi dan representasi fitur. Matriks dan vektor digunakan untuk mengelola transformasi sinyal audio dari domain waktu ke domain frekuensi, serta menyusun fingerprint dalam bentuk numerik atau biner yang dapat dibandingkan secara efisien.
+
+Proses pertama dalam fingerprinting audio adalah segmentasi sinyal ke dalam frame-frame kecil. Setiap frame kemudian dianalisis menggunakan Transformasi Fourier Cepat (Fast Fourier Transform / FFT) untuk menghasilkan representasi spektral. Output dari transformasi ini berupa matriks spektrum daya, di mana setiap kolom mewakili satu frame waktu, dan setiap baris menunjukkan intensitas pada band frekuensi tertentu. Inilah representasi awal sinyal audio dalam bentuk matriks energi frekuensi.
+
+Selanjutnya, energi dalam masing-masing band frekuensi dipetakan ke dalam vektor fitur, yang menunjukkan perbedaan energi antar band secara lokal (baik antar waktu maupun antar frekuensi). Misalnya, dalam sistem Haitsma-Kalker (2002), perbedaan energi antara dua band frekuensi di dua waktu berturut-turut dikonversi menjadi bit ‘1’ atau ‘0’. Proses ini menghasilkan sub-fingerprint 32-bit per frame, yang kemudian disusun menjadi blok fingerprint sepanjang beberapa detik.
+
+Penggunaan vektor fitur memungkinkan:
+- Reduksi dimensi data dari sinyal audio asli.
+- Peningkatan efisiensi pencarian melalui hashing dan pengkodean bitstring.
+- Penghitungan kemiripan berdasarkan metrik jarak seperti jarak Hamming untuk bitstring atau norma Euclidean untuk vektor numerik.
+
+Struktur ini juga memudahkan pencocokan dalam database besar karena fingerprint yang telah disusun sebagai vektor berdimensi rendah dapat digunakan dalam berbagai algoritma pencarian efisien seperti LSH (Locality Sensitive Hashing) atau pencocokan berbasis indexing.
+
+Dengan demikian, matriks dan vektor tidak hanya mendasari perhitungan numerik, tetapi juga menjadi representasi utama yang memungkinkan sistem fingerprint bekerja dengan kecepatan tinggi dan ketahanan tinggi terhadap distorsi sinyal.
