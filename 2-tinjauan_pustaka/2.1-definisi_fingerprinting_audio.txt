@@ -1,0 +1,13 @@
+Fingerprinting audio adalah teknik identifikasi berbasis konten yang mengekstraksi ciri khas dari sinyal audio menjadi representasi digital yang ringkas, unik, dan robust. Representasi ini disebut sebagai fingerprint, yang secara umum berbentuk vektor atau bitstring, dan digunakan untuk mencocokkan potongan audio terhadap database referensi. Tidak seperti watermarking yang membutuhkan modifikasi sinyal audio, fingerprinting bekerja secara pasif dan non-destruktif, sehingga dapat diterapkan pada audio yang sudah ada tanpa harus dimodifikasi terlebih dahulu.
+
+Menurut Cano et al. (2005), fingerprint audio bertujuan untuk menghasilkan "intisari perseptual" dari rekaman suara, yang tetap konsisten meskipun sinyal mengalami distorsi seperti kompresi, noise, atau perubahan format. Ciri khas yang diekstrak harus tetap dapat dikenali bahkan pada cuplikan audio pendek, menjadikan fingerprint sebagai solusi ideal untuk identifikasi audio secara real-time.
+
+Haitsma dan Kalker (2002) mengembangkan sistem fingerprinting yang digunakan dalam Shazam, yang membagi sinyal audio menjadi beberapa frame, melakukan transformasi spektral (seperti Fourier), lalu memetakan hasilnya ke dalam fingerprint berupa bit-bit yang menyimpan perbedaan energi antar band frekuensi logaritmik. Hasil akhirnya adalah urutan bit unik yang merepresentasikan karakteristik audio secara kompak.
+
+Fingerprint audio tidak hanya digunakan untuk identifikasi lagu, tetapi juga untuk:
+- Pemantauan siaran,
+- Penyaringan file di jaringan P2P,
+- Verifikasi integritas konten,
+- Otentikasi audio.
+
+Dengan kata lain, fingerprinting audio adalah fondasi dari berbagai sistem yang membutuhkan identifikasi konten tanpa ketergantungan pada metadata eksplisit atau informasi label lainnya.
